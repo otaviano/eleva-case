@@ -1,0 +1,82 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29411.108
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{D192CC7A-54DC-4444-AE3B-5B70FE62CCCC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{F4DAE991-540D-470C-A849-E585FB946847}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{C2256B9A-D198-495B-8A43-93643C95B95B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra.Data", "4 - Infra.Data", "{FCA3209C-5579-4129-AC84-31E8F6A71794}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Infra.Bus", "5 - Infra.Bus", "{C00AA3EC-6379-40BA-9BF5-4263D9398092}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6 - Infra.IoC", "6 - Infra.IoC", "{1A8E7B78-3EF2-4574-BDF3-916E36255E18}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElevaCase.Domain", "src\ElevaCase.Domain\ElevaCase.Domain.csproj", "{C14C6D67-2428-439E-A8FE-FFAF1F4FE031}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElevaCase.Infra.Data", "src\ElevaCase.Infra.Data\ElevaCase.Infra.Data.csproj", "{5715516E-385F-41DE-B819-7BC46C509EF3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElevaCase.Application", "src\ElevaCase.Application\ElevaCase.Application.csproj", "{EF55EF38-A299-4549-80CE-32146DC34C97}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElevaCase.Infra.IoC", "src\ElevaCase.Infra.IoC\ElevaCase.Infra.IoC.csproj", "{B944DFE8-1B5C-4B0E-AF44-065FA861AF49}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElevaCase.Bus", "src\ElevaCase.Bus\ElevaCase.Bus.csproj", "{F3AFD429-BA5F-4342-BD9D-404DBFC37CB9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElevaCase.Domain.Core", "src\ElevaCase.Domain.Core\ElevaCase.Domain.Core.csproj", "{38DED950-C997-4C59-B8CE-CACA2DB89243}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElevaCase.Api", "src\ElevaCase.Api\ElevaCase.Api.csproj", "{C7E4B7F2-2EB5-4C73-B0F7-A26562081345}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C14C6D67-2428-439E-A8FE-FFAF1F4FE031}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C14C6D67-2428-439E-A8FE-FFAF1F4FE031}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C14C6D67-2428-439E-A8FE-FFAF1F4FE031}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C14C6D67-2428-439E-A8FE-FFAF1F4FE031}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5715516E-385F-41DE-B819-7BC46C509EF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5715516E-385F-41DE-B819-7BC46C509EF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5715516E-385F-41DE-B819-7BC46C509EF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5715516E-385F-41DE-B819-7BC46C509EF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF55EF38-A299-4549-80CE-32146DC34C97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF55EF38-A299-4549-80CE-32146DC34C97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF55EF38-A299-4549-80CE-32146DC34C97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF55EF38-A299-4549-80CE-32146DC34C97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B944DFE8-1B5C-4B0E-AF44-065FA861AF49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B944DFE8-1B5C-4B0E-AF44-065FA861AF49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B944DFE8-1B5C-4B0E-AF44-065FA861AF49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B944DFE8-1B5C-4B0E-AF44-065FA861AF49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3AFD429-BA5F-4342-BD9D-404DBFC37CB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3AFD429-BA5F-4342-BD9D-404DBFC37CB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3AFD429-BA5F-4342-BD9D-404DBFC37CB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3AFD429-BA5F-4342-BD9D-404DBFC37CB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38DED950-C997-4C59-B8CE-CACA2DB89243}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38DED950-C997-4C59-B8CE-CACA2DB89243}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38DED950-C997-4C59-B8CE-CACA2DB89243}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38DED950-C997-4C59-B8CE-CACA2DB89243}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7E4B7F2-2EB5-4C73-B0F7-A26562081345}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7E4B7F2-2EB5-4C73-B0F7-A26562081345}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7E4B7F2-2EB5-4C73-B0F7-A26562081345}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7E4B7F2-2EB5-4C73-B0F7-A26562081345}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C14C6D67-2428-439E-A8FE-FFAF1F4FE031} = {C2256B9A-D198-495B-8A43-93643C95B95B}
+		{5715516E-385F-41DE-B819-7BC46C509EF3} = {FCA3209C-5579-4129-AC84-31E8F6A71794}
+		{EF55EF38-A299-4549-80CE-32146DC34C97} = {F4DAE991-540D-470C-A849-E585FB946847}
+		{B944DFE8-1B5C-4B0E-AF44-065FA861AF49} = {1A8E7B78-3EF2-4574-BDF3-916E36255E18}
+		{F3AFD429-BA5F-4342-BD9D-404DBFC37CB9} = {C00AA3EC-6379-40BA-9BF5-4263D9398092}
+		{38DED950-C997-4C59-B8CE-CACA2DB89243} = {C2256B9A-D198-495B-8A43-93643C95B95B}
+		{C7E4B7F2-2EB5-4C73-B0F7-A26562081345} = {D192CC7A-54DC-4444-AE3B-5B70FE62CCCC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {335D98A2-6A2B-46D0-ADD0-5FA3A69B9B39}
+	EndGlobalSection
+EndGlobal
