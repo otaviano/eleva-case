@@ -20,5 +20,8 @@ namespace ElevaCase.Infra.Data.Repositories
             dbContext.Schools.Add(school);
             dbContext.SaveChanges();
         }
+
+        public IQueryable<School> SearchSchools(string name) =>
+            dbContext.Schools.Where(p => p.Name.Contains(name ?? string.Empty));
     }
 }

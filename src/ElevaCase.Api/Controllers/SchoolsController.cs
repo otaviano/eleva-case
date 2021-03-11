@@ -24,9 +24,9 @@ namespace ElevaCase.Api.Controllers
         }
 
         [HttpGet]
-        public ActionResult Get()
+        public ActionResult Get([FromQuery] string name)
         {
-            var schools = schoolService.GetSchools();
+            var schools = schoolService.SearchSchools(name);
 
             return Ok(schools);
         }

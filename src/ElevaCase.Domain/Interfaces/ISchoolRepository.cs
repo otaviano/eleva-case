@@ -5,6 +5,8 @@ namespace ElevaCase.Domain.Interfaces
 {
     public interface ISchoolRepository
     {
+        IQueryable<School> SearchSchools(string name);
+
         IQueryable<School> GetAll();
 
         void Add(School school);

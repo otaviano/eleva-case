@@ -35,5 +35,12 @@ namespace ElevaCase.Application.Services
 
             return schools.ProjectTo<SchoolViewModel>(autoMapper.ConfigurationProvider) ;
         }
+
+        public IEnumerable<SchoolViewModel> SearchSchools(string name)
+        {
+            var schools = schoolRepository.SearchSchools(name);
+
+            return schools.ProjectTo<SchoolViewModel>(autoMapper.ConfigurationProvider);
+        }
     }
 }

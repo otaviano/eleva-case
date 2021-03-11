@@ -25,6 +25,7 @@ namespace ElevaCase.Api
             services.AddSwaggerGen(p => p.SwaggerDoc("v1", new OpenApiInfo{ Title = "Eleva Case API", Version = "v1"}));
             services.AddMediatR(typeof(Startup));
             services.RegisterAutoMapper();
+            services.AddCors();
 
             DependencyContainer.RegisterServices(Configuration, services);
         }
@@ -36,11 +37,17 @@ namespace ElevaCase.Api
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
+            
+            //app.UseHttpsRedirection();
             app.UseSwagger();
             app.UseSwaggerUI(p => p.SwaggerEndpoint("/swagger/v1/swagger.json", "Eleva Case v1"));
             app.UseRouting();
             app.UseAuthorization();
+
+            app.UseCors(builder =>
+                builder.WithOrigins("http://localhost:4200")
+                    .AllowAnyHeader()
+                    .AllowAnyMethod());
 
             app.UseEndpoints(endpoints =>
             {
