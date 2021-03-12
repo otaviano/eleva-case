@@ -36,16 +36,18 @@ namespace ElevaCase.Api
             {
                 app.UseDeveloperExceptionPage();
             }
+            else
+            {
+                app.UseHttpsRedirection();
+            }
 
-            
-            //app.UseHttpsRedirection();
             app.UseSwagger();
             app.UseSwaggerUI(p => p.SwaggerEndpoint("/swagger/v1/swagger.json", "Eleva Case v1"));
             app.UseRouting();
             app.UseAuthorization();
 
             app.UseCors(builder =>
-                builder.WithOrigins("http://localhost:4200")
+                builder.WithOrigins(Configuration.GetValue<string>("CorsAllowedHosts"))
                     .AllowAnyHeader()
                     .AllowAnyMethod());
 
