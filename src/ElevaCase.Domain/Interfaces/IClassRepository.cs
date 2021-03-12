@@ -7,6 +7,8 @@ namespace ElevaCase.Domain.Interfaces
     {
         IQueryable<@Class> GetAll(int schoolId);
 
+        IQueryable<@Class> Search(int schoolId, string name);
+
         void Add(@Class @class);
     }
 }

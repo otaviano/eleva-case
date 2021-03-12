@@ -1,7 +1,6 @@
 ﻿using ElevaCase.Domain.Entities;
 using ElevaCase.Domain.Interfaces;
 using ElevaCase.Infra.Data.Context;
-using System.Collections.Generic;
 using System.Linq;
 
 namespace ElevaCase.Infra.Data.Repositories
@@ -12,6 +11,10 @@ namespace ElevaCase.Infra.Data.Repositories
 
         public ClassRepository(ElevaCaseDbContext dbContext) => 
             this.dbContext = dbContext;
+
+
+        public IQueryable<@Class> Search(int schoolId, string name) =>
+            dbContext.Classes.Where(p => p.School.Id == schoolId && p.Name.Contains(name ?? string.Empty));
 
         public IQueryable<@Class> GetAll(int schoolId) => 
             dbContext.Classes.Where(p => p.School.Id == schoolId);

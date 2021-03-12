@@ -35,5 +35,12 @@ namespace ElevaCase.Application.Services
 
             return classes.ProjectTo<ClassViewModel>(autoMapper.ConfigurationProvider) ;
         }
+
+        public IEnumerable<ClassViewModel> SearchClasses(int schoolId, string name)
+        {
+            var classes = classRepository.Search(schoolId, name);
+
+            return classes.ProjectTo<ClassViewModel>(autoMapper.ConfigurationProvider);
+        }
     }
 }

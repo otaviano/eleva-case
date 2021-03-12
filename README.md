@@ -1,5 +1,11 @@
 # eleva-case
 
+## Faltando
+    * Validações
+    * Testes
+    * Tratamento de Exceções
+    * log
+
 Full Stack Developer - Case
 Objetivo
 A prefeitura de uma cidade no interior do país está com dificuldades para controlar

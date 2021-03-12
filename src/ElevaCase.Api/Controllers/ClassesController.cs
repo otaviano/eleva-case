@@ -1,6 +1,7 @@
 ﻿using ElevaCase.Application.Interfaces;
 using ElevaCase.Application.ViewModel;
 using Microsoft.AspNetCore.Mvc;
+using System.Net;
 
 namespace ElevaCase.Api.Controllers
 {
@@ -18,17 +19,36 @@ namespace ElevaCase.Api.Controllers
         [HttpPost]
         public IActionResult Post([FromBody] ClassViewModel model)
         {
-            classService.Create(model);
+            try
+            {
+                classService.Create(model);
 
-            return Ok(model);
+                return Accepted();
+            }
+            // TODO : tratamento de exceptions
+            //catch (ValidationException e)
+            //{
+            //    return BadRequest(new JsonErrorResponse(e.Errors));
+            //}
+            catch
+            {
+                return StatusCode((int)HttpStatusCode.InternalServerError);
+            }
         }
 
         [HttpGet]
-        public ActionResult Get([FromQuery] int schoolId)
+        public ActionResult Get([FromQuery] int schoolId, [FromQuery] string name)
         {
-            var classes = classService.GetClasses(schoolId);
+            try
+            {
+                var classes = classService.SearchClasses(schoolId, name);
 
-            return Ok(classes);
+                return Ok(classes);
+            }
+            catch
+            {
+                return StatusCode((int)HttpStatusCode.InternalServerError);
+            }
         }
     }
 }

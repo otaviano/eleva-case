@@ -5,6 +5,8 @@ namespace ElevaCase.Application.Interfaces
 {
     public interface IClassService
     {
+        IEnumerable<ClassViewModel> SearchClasses(int schoolId, string name);
+
         IEnumerable<ClassViewModel> GetClasses(int schoolId);
 
         void Create(ClassViewModel model);
