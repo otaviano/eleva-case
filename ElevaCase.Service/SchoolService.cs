@@ -8,7 +8,7 @@ using ElevaCase.Domain.Commands;
 using ElevaCase.Domain.Core.Bus;
 using ElevaCase.Domain.Interfaces;
 
-namespace ElevaCase.Application.Services
+namespace ElevaCase.Domain.Service
 {
     public class SchoolService : ISchoolService
     {

@@ -39,6 +39,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{84B2FCF8
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElevaCase.UnitTests", "tests\ElevaCase.UnitTests\ElevaCase.UnitTests.csproj", "{0DED615C-A67C-47DE-8704-78BE25FBAC85}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElevaCase.Domain.Service", "ElevaCase.Service\ElevaCase.Domain.Service.csproj", "{53378684-116C-457F-91CA-1E85DCBB6570}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +79,10 @@ Global
 		{0DED615C-A67C-47DE-8704-78BE25FBAC85}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DED615C-A67C-47DE-8704-78BE25FBAC85}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DED615C-A67C-47DE-8704-78BE25FBAC85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53378684-116C-457F-91CA-1E85DCBB6570}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53378684-116C-457F-91CA-1E85DCBB6570}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53378684-116C-457F-91CA-1E85DCBB6570}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53378684-116C-457F-91CA-1E85DCBB6570}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -90,6 +96,7 @@ Global
 		{38DED950-C997-4C59-B8CE-CACA2DB89243} = {C2256B9A-D198-495B-8A43-93643C95B95B}
 		{C7E4B7F2-2EB5-4C73-B0F7-A26562081345} = {D192CC7A-54DC-4444-AE3B-5B70FE62CCCC}
 		{0DED615C-A67C-47DE-8704-78BE25FBAC85} = {84B2FCF8-A00E-4F0B-B427-DD8AAB963A65}
+		{53378684-116C-457F-91CA-1E85DCBB6570} = {C2256B9A-D198-495B-8A43-93643C95B95B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {335D98A2-6A2B-46D0-ADD0-5FA3A69B9B39}

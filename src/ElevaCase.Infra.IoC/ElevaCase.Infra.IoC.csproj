@@ -9,6 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\ElevaCase.Service\ElevaCase.Domain.Service.csproj" />
     <ProjectReference Include="..\ElevaCase.Application\ElevaCase.Application.csproj" />
     <ProjectReference Include="..\ElevaCase.Bus\ElevaCase.Bus.csproj" />
     <ProjectReference Include="..\ElevaCase.Infra.Data\ElevaCase.Infra.Data.csproj" />

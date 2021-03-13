@@ -33,7 +33,6 @@ namespace Take.Zendesk.Integration.Tests.Controllers
             response.Should()
                 .NotBeNull()
                 .And.BeOfType<OkObjectResult>();
-
         }
 
         [Fact]
