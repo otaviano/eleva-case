@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using ElevaCase.Application.Interfaces;
@@ -22,11 +23,11 @@ namespace ElevaCase.Application.Services
             this.schoolRepository = schoolRepository;
         }
 
-        public void Create(SchoolViewModel model)
+        public async Task Create(SchoolViewModel model)
         {
             var command = autoMapper.Map<CreateSchoolCommand>(model);
 
-            bus.SendCommand(command);
+            await bus.SendCommand(command);
         }
 
         public IEnumerable<SchoolViewModel> GetSchools()

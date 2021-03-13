@@ -1,5 +1,6 @@
 ﻿using ElevaCase.Application.ViewModel;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace ElevaCase.Application.Interfaces
 {
@@ -9,6 +10,6 @@ namespace ElevaCase.Application.Interfaces
 
         IEnumerable<ClassViewModel> GetClasses(int schoolId);
 
-        void Create(ClassViewModel model);
+        Task Create(ClassViewModel model);
     }
 }

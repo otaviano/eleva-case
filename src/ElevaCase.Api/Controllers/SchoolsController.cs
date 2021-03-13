@@ -2,6 +2,7 @@
 using ElevaCase.Application.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
+using System.Threading.Tasks;
 
 namespace ElevaCase.Api.Controllers
 {
@@ -17,11 +18,11 @@ namespace ElevaCase.Api.Controllers
         }
 
         [HttpPost]
-        public IActionResult Post([FromBody] SchoolViewModel model)
+        public async Task<IActionResult> PostAsync([FromBody] SchoolViewModel model)
         {
             try
             {
-                schoolService.Create(model);
+                await schoolService.Create(model);
 
                 return Accepted();
             }
@@ -49,7 +50,6 @@ namespace ElevaCase.Api.Controllers
             {
                 return StatusCode((int)HttpStatusCode.InternalServerError);
             }
-
         }
     }
 }
