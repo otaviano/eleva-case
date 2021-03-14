@@ -2,7 +2,7 @@
 {
     public class CreateSchoolCommand : SchoolCommand
     {
-        public CreateSchoolCommand(string name, string description) // TODO: school ID
+        public CreateSchoolCommand(string name, string description)
         {
             Name = name;
             Description = description;

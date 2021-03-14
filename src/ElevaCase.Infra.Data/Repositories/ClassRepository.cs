@@ -19,7 +19,7 @@ namespace ElevaCase.Infra.Data.Repositories
         public IQueryable<@Class> GetAll(int schoolId) => 
             dbContext.Classes.Where(p => p.School.Id == schoolId);
 
-        public void Add(@Class @class)
+        public void Create(@Class @class)
         {
             dbContext.Classes.Add(@class);
             dbContext.SaveChanges();

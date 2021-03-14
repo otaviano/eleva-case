@@ -9,6 +9,6 @@ namespace ElevaCase.Domain.Interfaces
 
         IQueryable<@Class> Search(int schoolId, string name);
 
-        void Add(@Class @class);
+        void Create(@Class @class);
     }
 }

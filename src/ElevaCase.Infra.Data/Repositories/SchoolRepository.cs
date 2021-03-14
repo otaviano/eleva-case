@@ -15,7 +15,7 @@ namespace ElevaCase.Infra.Data.Repositories
         public IQueryable<School> GetAll() => 
             dbContext.Schools;
 
-        public void Add(School school)
+        public void Create(School school)
         {
             dbContext.Schools.Add(school);
             dbContext.SaveChanges();
